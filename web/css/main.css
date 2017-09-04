@@ -1,0 +1,96 @@
+/*ELEMENT selectors come first, ranked from Big (body, html, section) to Small (a, p, input)*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Oranienbaum', serif;
+}
+
+p{
+	font-weight: 300;
+	color: #4C3030;
+	line-height: 1.4;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+    a:hover{
+        color: #283F98;
+    }
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/*end of ELEMENT selectors*/
+
+/*CONVENIENCE selectors come next. these are CSS classes that are generally helpful to have around but don't have a specific purpose in your design.*/
+
+.rel{position:relative;}
+.right{float: right !important;}
+.left{float: left !important;}
+.clear{clear: both;} 
+.invisible {visibility: hidden;}
+.faded{opacity: 0.5;}
+.textright{text-align: right;}
+
+
+/*Clearfix is weird, we'll talk more about it.*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*end of CONVENIENCE selectors*/
+
+/*CLASS selectors come next. this is the largest section of the stylesheet. these are specific classes that have structural or aesthetic purposes in your design.*/
+
+.center-column{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.left-column{
+    width: 80%;
+}
+
+/*end of CLASS selectors*/
+
+/* ID selectors come next. These are super-specific selectors that apply to single items.*/
+
+#pitch{
+    font-size: 2.5em;
+    color: #0F36B0;
+}
+
+/*end of ID selectors*/
+
+/*Finally, media queries belong at the very bottom. */
+
+media (max-width: 800px){
+	html, body{
+        font-size: 0.8em;
+	}
+}
+
+/*end of Media Queries*/
