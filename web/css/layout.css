@@ -1,0 +1,42 @@
+body{
+    background-color: #C6C6C6;
+}
+
+div.underlay{
+    position: absolute;
+    background-color: #c6cdff;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 50%;
+}
+
+.main{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+.center-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.center-box .grid-item{
+    position: relative;
+    width: 25%;
+    height: 25%;
+    /* background-color: #6666FF; */
+}
+
+.grid-item .overlay{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,94 @@
+.grid-item .overlay{
+    background-image: url('../images/smtext.png');
+    opacity: 0.5;
+}
+
+
+#blurgrey {
+    background-position: 0px 0px;
+    filter: blur(2px) grayscale(100%);
+}
+
+#blur {
+    background-position: 60px 0px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+#hue {
+    background-position: 120px 0px;
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+}
+
+#invert{
+    background-position: 180px 0px;
+    -webkit-filter: invert(.8);
+    filter: invert(.8);
+}
+
+#brightness{
+    background-position: 0px 60px;
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
+}
+
+#contrast{
+    background-position: 60px 60px;
+    -webkit-filter: contrast(3);
+    filter: contrast(3);
+}
+
+#sepia{
+    background-position: 120px 60px;
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+#normal{
+    background-position: 180px 60px;
+}
+
+#multiply{
+    background-position: 0px 120px;
+    background-blend-mode: multiply;
+    background-color: red;
+}
+
+#mix-darken{
+    background-position: 60px 120px;
+    mix-blend-mode: darken;
+}
+
+#difference{
+    background-position: 120px 120px;
+    background-blend-mode: difference;
+    background-color: #FF0000;
+}
+
+#multi{
+    background: 
+        url('../images/smtext.png') 0px 0px,
+        url('../images/smtext.png') 120px 120px;
+    background-blend-mode: multiply;
+}
+
+#mix-hue{
+    background-position: 0px 180px;
+    mix-blend-mode: hue;
+}
+
+#mix-diff{
+    background-position: 60px 180px;
+    mix-blend-mode: difference;
+}
+
+#mix-color{
+    background-position: 120px 180px;
+    mix-blend-mode: color;
+}
+
+#mix-lum{
+    background-position: 180px 180px;
+    mix-blend-mode: luminosity;
+}
