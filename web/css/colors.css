@@ -9,7 +9,7 @@
 /* Backgrounds */
 .bg-navy { background-color: #001F3F; color: white; }
 .bg-blue { background-color: #0074D9; color: white;  }
-.bg-aqua { background-color: #7FDBFF; }
+.bg-aqua { background-color: #7FDBFF; color: #001F3F;}
 .bg-teal { background-color: #39CCCC; }
 .bg-olive { background-color: #3D9970; color: white; }
 .bg-green { background-color: #2ECC40; }
@@ -19,7 +19,7 @@
 .bg-red { background-color: #FF4136;color: white;  }
 .bg-fuchsia { background-color: #F012BE; }
 .bg-purple { background-color: #B10DC9; }
-.bg-maroon { background-color: #85144B; }
+.bg-maroon { background-color: #85144B; color: #E27878; }
 .bg-white { background-color: #FFFFFF; }
 .bg-gray { background-color: #AAAAAA; }
 .bg-silver { background-color: #DDDDDD; }

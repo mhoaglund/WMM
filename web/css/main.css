@@ -80,6 +80,29 @@ textarea {
     width: 80%;
 }
 
+.flex-grid-host{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+    .f-end{justify-content: flex-end;}
+    .f-start{justify-content: flex-start;}
+
+.flex-item{
+    position: relative;
+    width: 25%;
+}
+
+.flex-item.fixed{
+    width: 125px;
+    height: 125px;
+}
+
+.flex-item.full{
+    position: relative;
+    width: 100%;
+}
+
 /*end of CLASS selectors*/
 
 /* ID selectors come next. These are super-specific selectors that apply to single items.*/
@@ -87,6 +110,13 @@ textarea {
 #pitch{
     font-size: 2.5em;
     color: #0F36B0;
+}
+
+#floater{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
 }
 
 #first-bubble{
