@@ -7,16 +7,16 @@
 */
 
 /* Backgrounds */
-.bg-navy { background-color: #001F3F; }
-.bg-blue { background-color: #0074D9; }
+.bg-navy { background-color: #001F3F; color: white; }
+.bg-blue { background-color: #0074D9; color: white;  }
 .bg-aqua { background-color: #7FDBFF; }
 .bg-teal { background-color: #39CCCC; }
-.bg-olive { background-color: #3D9970; }
+.bg-olive { background-color: #3D9970; color: white; }
 .bg-green { background-color: #2ECC40; }
 .bg-lime { background-color: #01FF70; }
-.bg-yellow { background-color: #FFDC00; }
+.bg-yellow { background-color: #FFDC00; color: #001F3F; }
 .bg-orange { background-color: #FF851B; }
-.bg-red { background-color: #FF4136; }
+.bg-red { background-color: #FF4136;color: white;  }
 .bg-fuchsia { background-color: #F012BE; }
 .bg-purple { background-color: #B10DC9; }
 .bg-maroon { background-color: #85144B; }

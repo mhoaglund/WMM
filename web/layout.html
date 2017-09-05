@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>General CSS Layout Demo</title>
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/gradients.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="center-column bg-blue padded">
+            <h1>General Layout</h1>
+            <p>CSS is your toolbox for creating structure within your webpage, beyond what HTML alone is capable of.
+                CSS is also the source of the webpage's aesthetic- design of the layout, colors, typefaces, and so forth.
+            </p>
+            <div>
+                <div class="left bg-olive padded">
+                    This is a floated div on the left side.
+                </div>
+                <div class="right bg-red padded">
+                    This is a floated div on the right side.
+                </div>
+                <div class="bg-yellow padded textcenter">
+                    <span>Floats can be used to align elements to the left side (which is a default) or the right side of their parent container.</span>
+                </div>
+            </div>
+        </section>
+        <section class="center-column bg-olive padded row rel clearfix">
+            This is a relatively-positioned area which hosts two absolutely-positioned element. Notice how they can float over the text and don't seem to have the same rules.
+            <div id="first-bubble" class="bg-yellow padded">This is an absolutely-positioned div.</div>
+            <div id="second-bubble" class="gfruit_sunset padded">Here's another.</div>
+        </section>
+    </body>
+</html>

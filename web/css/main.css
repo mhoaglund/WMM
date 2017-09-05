@@ -2,14 +2,17 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.4;
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Arial', serif;
+}
+
+body{
+    background-color: #f1f1f1;
 }
 
 p{
 	font-weight: 300;
-	color: #4C3030;
 	line-height: 1.4;
 }
 
@@ -46,6 +49,9 @@ textarea {
 .invisible {visibility: hidden;}
 .faded{opacity: 0.5;}
 .textright{text-align: right;}
+.textcenter{text-align: center;}
+.padded{padding: 1em;}
+.row{height: 400px;}
 
 
 /*Clearfix is weird, we'll talk more about it.*/
@@ -83,11 +89,23 @@ textarea {
     color: #0F36B0;
 }
 
+#first-bubble{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#second-bubble{
+    position: absolute;
+    top: 20px;
+    right: 105px;
+}
+
 /*end of ID selectors*/
 
 /*Finally, media queries belong at the very bottom. */
 
-media (max-width: 800px){
+@media (max-width: 800px){
 	html, body{
         font-size: 0.8em;
 	}
