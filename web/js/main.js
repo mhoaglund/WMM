@@ -63,4 +63,49 @@ $(function(){
     // my_data.occupation.forEach(function(job){
     //     console.log('I am an ' + job);
     // })
+    
+
+    //But that code didn't use the real purpose Jquery was made for. Jquery is all about working with HTML and CSS stuff!
+    $('#t1').css({ //Look at the text in single-quotes there- just like CSS! This code will affect the element with that ID.
+        'color':'green'
+    })
+
+    $('#t1').animate({ //We can also animate stuff.
+        'opacity':0
+    }, 3000 ) //That '3000' is how long the animation will last.
+
+    //It gets more complicated. With animation, we can call another function when the animation is done!
+    //Suppose I want my element to return to 100% opacity after the first animation is done...
+    $('#t2').animate({
+        'opacity':0
+    }, 3000, function(){
+        $('#t2').css({
+            'opacity':1
+        })
+    })
+
+    //Jquery has the power to let you tap into events that happen in the browser.
+    // $('#t2').on('click', function(){
+    //     console.log('You clicked t2!')
+    // })
+
+    // $('#t2').on('mouseover', function(){
+    //     console.log('You hovered over t2!')
+    // })
+
+    //We aren't limited to just jquery stuff here. We can also use vanilla js, just like at the start of the demo.
+    //This will annoy us with an alert every 3 seconds (3000 ms)
+    //setInterval(function(){ console.log("Hello"); }, 3000);
+
+    setInterval(function(){
+        $('#t2').css({"background-color": generate_random_color})
+    }, 1000);
 })
+
+//See how this function is defined AFTER all our jquery stuff? It can still be used, no problem. But stay organized.
+function generate_random_color(){
+    var colorR = Math.floor((Math.random() * 256))
+    var colorG = Math.floor((Math.random() * 256))
+    var colorB = Math.floor((Math.random() * 256))
+    return "rgb(" + colorR + "," + colorG + "," + colorB + ")"
+}
