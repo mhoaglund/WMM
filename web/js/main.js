@@ -12,6 +12,7 @@ my_string += ', max' //You can "concatenate" or add strings together.
 console.log(my_string)
 
 //Here's an example of a basic object:
+//You need a comma after every line, except the last one.
 var my_data = {
     'name':'max', //This is a PROPERTY called name. The VALUE is max! The VALUE in this case is a STRING.
     'age':30, //Properties can be most anything! This one is a NUMBER.
