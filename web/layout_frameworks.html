@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>CSS Layout Frameworks</title>
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/gradients.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="center-column fill">
+                <h1>General Layout</h1>
+                <p>CSS is your toolbox for creating structure within your webpage, beyond what HTML alone is capable of.
+                    CSS is also the source of the webpage's aesthetic- design of the layout, colors, typefaces, and so forth.
+                </p>
+        </section>
+        <section class="center-column">
+
+                <h1>Grid Layout</h1>
+                Here's a css grid layout. This is among the best and most contemporary ways of establishing a layout using css.
+                <div class="grid-host">
+                    <div class="sidebar bg-maroon">The sidebar grid area</div>
+                    <div class="c1 gfruit_sunset">The first block of content here, maybe?</div>
+                    <div class="smallbox bg-olive">This tiny box</div>
+                    <div class="stripe bg-blue">This stripe that divides the two content areas</div>
+                    <div class="follower">Not sure about this thing</div>
+                    <div class="c2">The second block of content</div>
+                    <div class="overrun"></div>
+                </div>
+            </section>
+        <section class="center-column clearfix padded">
+            <h1>Flex Layout</h1>
+            Here's a flex-box layout. Not quite as good as the grid layout system, but still very useful.
+            <div class="flex-grid-host f-end">
+                <div class="flex-item">25% width Item</div>
+                <div class="flex-item">25% width Item</div>
+                <div class="flex-item">25% width Item</div>
+                <div class="flex-item">25% width Item</div>
+                <div class="flex-item fixed">Fixed item</div>
+                <div class="flex-item fixed">Fixed item</div>
+            </div>
+            Flex allows us to just stack blocks. It's a little more natural.
+            <div class="flex-grid-host f-start">
+                <div class="flex-item zinc">25% width Item</div>
+                <div class="flex-item fixed">Fixed-size item</div>
+                <div class="flex-item fixed">Fixed-size item</div>
+                <div class="flex-item zinc">25% width Item</div>
+                <div class="flex-item full bg-olive padded">Full width Item</div>
+            </div>
+        </section>
+    </body>
+</html>

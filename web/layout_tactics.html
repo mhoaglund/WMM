@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>General CSS Layout Demo</title>
+        <title>CSS Layout Tactics</title>
         <link rel="stylesheet" href="css/colors.css">
         <link rel="stylesheet" href="css/gradients.css">
         <link rel="stylesheet" href="css/main.css">
@@ -9,10 +9,7 @@
     <body>
         <div id="floater" class="padded bg-red">This is a div with <br/>fixed positioning.</div>
         <section class="center-column bg-blue padded">
-            <h1>General Layout</h1>
-            <p>CSS is your toolbox for creating structure within your webpage, beyond what HTML alone is capable of.
-                CSS is also the source of the webpage's aesthetic- design of the layout, colors, typefaces, and so forth.
-            </p>
+            
             <div>
                 <div class="left bg-olive padded">
                     This is a floated div on the left side.
@@ -33,25 +30,6 @@
             <div id="first-bubble" class="bg-yellow padded">This is an absolutely-positioned div.</div>
             <div id="second-bubble" class="gfruit_sunset padded">Here's another.</div>
         </section>
-        <section class="center-column bg-maroon clearfix padded">
-            <h1>Flex Layout</h1>
-            Here's a flex-box layout. This layout style is more modern and easier to deal with.
-            <div class="flex-grid-host f-end">
-                <div class="flex-item gfruit_sunset">25% width Item</div>
-                <div class="flex-item gfruit_sunset">25% width Item</div>
-                <div class="flex-item gfruit_sunset">25% width Item</div>
-                <div class="flex-item gfruit_sunset">25% width Item</div>
-                <div class="flex-item fixed gfruit_sunset">Fixed item</div>
-                <div class="flex-item fixed gfruit_sunset">Fixed item</div>
-            </div>
-            Flex allows us to just stack blocks. It's a little more natural.
-            <div class="flex-grid-host f-start">
-                <div class="flex-item zinc">25% width Item</div>
-                <div class="flex-item fixed gfruit_sunset">Fixed item</div>
-                <div class="flex-item fixed gfruit_sunset">Fixed item</div>
-                <div class="flex-item zinc">25% width Item</div>
-                <div class="flex-item full bg-aqua padded">Full width Item</div>
-            </div>
-        </section>
+        
     </body>
 </html>

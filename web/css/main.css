@@ -9,6 +9,7 @@ html {
 
 body{
     background-color: #f1f1f1;
+    min-height: 100%;
 }
 
 p{
@@ -52,6 +53,7 @@ textarea {
 .textcenter{text-align: center;}
 .padded{padding: 1em;}
 .row{height: 400px;}
+.fill{min-height: 100%;}
 
 
 /*Clearfix is weird, we'll talk more about it.*/
@@ -73,12 +75,39 @@ textarea {
 .center-column{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
 }
 
 .left-column{
     width: 80%;
 }
+
+.grid-host{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 100px 1fr;
+    grid-template-areas: "sidebar content1"
+                         "smallbox stripe"
+                         "follower content2";
+}
+
+.grid-host div{
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+    .grid-host .sidebar{grid-area: sidebar;}
+    .grid-host .c1{grid-area: content1;}
+    .grid-host .smallbox{grid-area: smallbox;}
+    .grid-host .stripe{grid-area: stripe;}
+    .grid-host .smallbox{grid-area: follower;}
+    .grid-host .c2{grid-area: content2;}
+    .grid-host .overrun{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
 
 .flex-grid-host{
     display: flex;
@@ -91,6 +120,9 @@ textarea {
 .flex-item{
     position: relative;
     width: 25%;
+    border: 1px solid;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .flex-item.fixed{
@@ -137,7 +169,7 @@ textarea {
 
 @media (max-width: 800px){
 	html, body{
-        font-size: 0.8em;
+        font-size: 1em;
 	}
 }
 
