@@ -5,6 +5,7 @@ html{
 
 body{
     font-size: 1em;
+    margin: 0;
 }
 
 p{
@@ -31,7 +32,6 @@ aside.overlay{
 }
 
 .page{
-    margin: 2em;
     padding-top: 7vh;
     padding-bottom: 7vh;
     padding-left: 7vw;
