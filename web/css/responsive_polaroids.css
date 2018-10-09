@@ -24,8 +24,10 @@ aside.overlay{
 
 .titlecard{
     color: green;
+    font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
+    text-shadow: 0px 0px 8px white;
 }
 
 .book{
@@ -88,6 +90,14 @@ aside.overlay{
         .main-grid.auto{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 50%));
+        }
+        aside.overlay{
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            font-weight: bold;
+            color: black;
         }
     }
     /*At a small screen size, just go back to basics*/
