@@ -1,0 +1,101 @@
+html{
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    font-size: 1em;
+    margin: 0;
+    background-color: black;
+}
+
+p{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+aside.overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.titlecard{
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.book{
+    background-color: black;
+}
+
+.page{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background-color: black;
+    color: cornsilk;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .page p{
+        font-size: 1.2em;
+        line-height: 1.3em;
+        text-shadow: 2px 2px 4px black;
+    }
+
+.main-grid{
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.main-grid.auto{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+    .page{background-image: url('../images/Polaroid-1-Dog.jpg')}
+    .page:nth-child(1){background-image: url('../images/Polaroid-1-Dog.jpg')}
+    .page:nth-child(2){background-image: url('../images/tarkovsky_polaroid-17.jpg')}
+    .page:nth-child(3){background-image: url('../images/tarkovsky_polaroids_05.jpg')}
+    .page:nth-child(4){background-image: url('../images/tarkovsky_polaroids_06.jpg')}
+    .page:nth-child(5){background-image: url('../images/tarkovsky_polaroids_07.jpg')}
+    .page:nth-child(6){background-image: url('../images/tarkovsky_polaroids_08.jpg')}
+    .page:nth-child(7){background-image: url('../images/tarkovsky_polaroids_9.jpg')}
+    .page:nth-child(8){background-image: url('../images/Tarkovsky-Polaroid-10.jpg')}
+    .page:nth-child(9){background-image: url('../images/Tarkovsky-Polaroid-12.jpg')}
+    .page:nth-child(10){background-image: url('../images/Tarkovsky-Polaroid-14.jpg')}
+    .page:nth-child(11){background-image: url('../images/Tarkovsky-Polaroid-15.jpg')}
+    .page:nth-child(12){background-image: url('../images/Tarkovsky-Polaroid-16.jpg')}
+    .page:nth-child(13){background-image: url('../images/Tarkovsky-Polaroid-3-Lake.jpg')}
+    /*At a medium screen size, just go back to basics*/
+    @media (max-width: 1100px){
+        html, body{
+            font-size: 0.8em;
+        }
+        .main-grid.auto{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 50%));
+        }
+    }
+    /*At a small screen size, just go back to basics*/
+    @media (max-width: 600px){
+        html, body{
+            font-size: 0.8em;
+        }
+        .main-grid.auto{
+            display: block;
+        }
+    }
