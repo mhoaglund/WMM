@@ -1,0 +1,76 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "ibm-plex-mono";
+}
+
+h2{
+    -webkit-margin-before: 0px;
+}
+
+.main{
+    font-size: 1.0em;
+    line-height: 1.5;
+}
+    .main div{
+        padding: 2em;
+    }
+
+div:nth-child(odd){
+    background-color: orange;
+}
+div:nth-child(even){
+    background-color: #e2e2e2;
+}
+
+.main.responsive{
+    width: 40vw;
+    margin: auto;
+}
+
+.main.responsive p{
+    column-count: 2;
+}
+
+@media screen and (max-width: 1400px){
+    .main.responsive p{
+        column-count: 2;
+    }
+    .main.responsive{
+        width: 80vw;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .main.responsive p{
+        column-count: 1;
+    }
+    .main.responsive{
+        width: 100%;
+        margin: auto;
+    }
+    .main{
+        font-size: 1.0em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+}
