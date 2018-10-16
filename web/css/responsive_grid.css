@@ -71,6 +71,13 @@ div:nth-child(even){
     h2{
         font-size: 1.2em;
     }
+    div:nth-child(odd){
+        background-color: #ffbd9d;
+    }
+    div:nth-child(even){
+        background-color: #bbdddd;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
