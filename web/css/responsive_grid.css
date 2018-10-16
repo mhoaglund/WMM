@@ -21,6 +21,10 @@ h2{
         padding: 2em;
     }
 
+        .main div span{
+            color: #888;
+        }
+
 div:nth-child(odd){
     background-color: orange;
 }
@@ -71,6 +75,9 @@ div:nth-child(even){
 
 @media screen and (max-width: 800px){
     .main div{
-        padding: 2em;
+        padding: 1em;
+    }
+    .main div span{
+        display: none;
     }
 }
