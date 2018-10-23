@@ -1,0 +1,25 @@
+body, html{
+    
+}
+
+a{
+    color: blue;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+a:hover{
+    color: red;
+}
+
+/* The element to apply the animation to */
+div:hover {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color: orange;}
+    50%  {background-color: red;}
+    100% {background-color: orange;}
+}
